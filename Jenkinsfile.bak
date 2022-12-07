@@ -9,7 +9,6 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
                 script{
                     CCS2_AUTOSAR_DOWNLOAD()
                 }
