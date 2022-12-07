@@ -3,6 +3,13 @@ def CCS2_AUTOSAR_DOWNLOAD(){
       python C:\\Users\\MGT3KOR\\.jenkins\\workspace\\Scripted_pipeline\\PY_SPT\\PRINT.py ${1}
    """
 }
+properties([
+    parameters([
+        string(name: 'RELEASE_LABEL', defaultValue: 'ccs2', description: 'The name of the build version', trim: true),
+
+        ])
+    ])
+
 pipeline {
     agent any
 
